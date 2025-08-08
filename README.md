@@ -6,11 +6,7 @@ It is developed on GNS3, simulating real networks design and scalability.
 
 **Topology**
 
-<<<<<<< HEAD
 ![Topología de red](diagrams/topology.png)
-
-=======
-![Topología de red](diagrams/topologia.png)
 
 
 **Main Characteristics**
@@ -20,6 +16,7 @@ It is developed on GNS3, simulating real networks design and scalability.
 - Redundancy with HSRP and Etherchannel
 - NAT Implementation
 - Security (ACLs, Port-Security, Dynamic ARP Inspection, DHCP Snooping)
+  
 
 **Tecnologies**
 
