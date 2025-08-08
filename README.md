@@ -16,3 +16,14 @@ It is developed on GNS3, simulating real networks design and scalability.
 - Redundancy with HSRP and Etherchannel
 - NAT Implementation
 - Security (ACLs, Port-Security, Dynamic ARP Inspection, DHCP Snooping)
+
+**Tecnologies**
+
+- Cisco IOU L2/L3
+- GNS3
+- Git and Github
+
+
+
+**Author** 
+Gustavo Martinez
