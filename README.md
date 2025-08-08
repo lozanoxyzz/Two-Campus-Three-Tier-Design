@@ -29,4 +29,4 @@ It is developed on GNS3, simulating real networks design and scalability.
 **Author** 
 
 Gustavo Martinez
->>>>>>> refs/remotes/origin/main
+
