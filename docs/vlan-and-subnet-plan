@@ -23,3 +23,7 @@ This document defines the VLAN IDs, names, associated subnets, default gateways,
 | Campus B | 50      | Engineering    | 10.0.1.64/26     | 10.0.1.65     | Engineering department       |
 | Campus B | 60      | Administration | 10.0.1.128/26    | 10.0.1.129    | Administration and Finance   |
 | Campus B | 199     | Admin-A        | 10.0.0.192/28    | 10.0.1.193    | Network management VLAN      |
+
+
+
+
