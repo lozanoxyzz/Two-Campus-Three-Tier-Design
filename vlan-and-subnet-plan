@@ -1,0 +1,25 @@
+# VLAN and Subnet Plan
+
+This document defines the VLAN IDs, names, associated subnets, default gateways, and their purpose in the Two-Campus Three-Tier Design.
+
+---
+
+## Campus A
+
+| Campus   | VLAN ID | Name           | Subnet           | Gateway       | Description                  |
+|----------|---------|----------------|------------------|---------------|------------------------------|
+| Campus A | 10      | Sales          | 10.0.0.0/26      | 10.0.0.1      | Sales department devices     |
+| Campus A | 20      | Engineering    | 10.0.0.64/26     | 10.0.0.65     | Engineering department       |
+| Campus A | 30      | Administration | 10.0.0.128/26    | 10.0.0.129    | Administration and Finance   |
+| Campus A | 99      | Admin-A        | 10.0.0.192/28    | 10.0.0.193    | Network management VLAN      |
+
+---
+
+## Campus B
+
+| Campus   | VLAN ID | Name           | Subnet           | Gateway       | Description                  |
+|----------|---------|----------------|------------------|---------------|------------------------------|
+| Campus B | 40      | Sales          | 10.0.1.0/26      | 10.0.1.1      | Sales department devices     |
+| Campus B | 50      | Engineering    | 10.0.1.64/26     | 10.0.1.65     | Engineering department       |
+| Campus B | 60      | Administration | 10.0.1.128/26    | 10.0.1.129    | Administration and Finance   |
+| Campus B | 199     | Admin-A        | 10.0.0.192/28    | 10.0.1.193    | Network management VLAN      |
