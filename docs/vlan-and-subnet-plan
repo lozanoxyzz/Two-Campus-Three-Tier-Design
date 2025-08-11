@@ -25,5 +25,4 @@ This document defines the VLAN IDs, names, associated subnets, default gateways,
 | Campus B | 199     | Admin-A        | 10.0.0.192/28    | 10.0.1.193    | Network management VLAN      |
 
 
-
-
+---
