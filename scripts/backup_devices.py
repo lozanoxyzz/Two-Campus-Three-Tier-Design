@@ -36,7 +36,7 @@ for device in device_info.values():
     filename = f'../backups/{hostname}_{year}-{month}-{day}_backup.txt'
 
     with open(filename, 'w') as f:
-        f.write(filename)
+        f.write(output)
 
     print('Closing connection ')
     connection.disconnect()
