@@ -11,7 +11,7 @@ year = now.year
 month = now.month
 day = now.day
 
-with open('../devices.json') as file:
+with open('devices.json') as file:
     device_info = json.load(file)
 
 for device in device_info.values():
@@ -33,7 +33,7 @@ for device in device_info.values():
     prompt = connection.find_prompt()
     hostname = prompt[0:-1]
 
-    filename = f'../backups/{hostname}_{year}-{month}-{day}_backup.txt'
+    filename = f'backups/{hostname}_{year}-{month}-{day}_backup.txt'
 
     with open(filename, 'w') as f:
         f.write(output)
