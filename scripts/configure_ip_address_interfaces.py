@@ -2,7 +2,7 @@ from netmiko import ConnectHandler
 import json
 import ipaddress
 
-with open('../devices.json') as file:
+with open('../devicesB.json') as file:
     devices_info = json.load(file)
 
 
@@ -23,11 +23,10 @@ for device in devices_info.values():
                                  'secret': 'cisco',
                                  'verbose': True
                                  }
-
+    print(ip)
     connection = ConnectHandler(**ip)
     print('Entering enable mode...')
     connection.enable()
-
     commands = []
     for interface, value in device['interfaces'].items():
         mask = value[-2:]
