@@ -14,7 +14,6 @@ It is developed on GNS3, simulating real networks design and scalability.
 - Inter-VLAN routing
 - OSPF Routing protocol
 - Redundancy with HSRP and Etherchannel
-- NAT Implementation
 - Security (ACLs, Port-Security, Dynamic ARP Inspection, DHCP Snooping)
 - DHCP Implementation
   
