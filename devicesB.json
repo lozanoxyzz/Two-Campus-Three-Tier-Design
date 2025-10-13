@@ -1,5 +1,12 @@
 {
 
+
+
+  "CS1": {
+    "hostname": "CS2",
+    "mgmt_ip": "10.0.2.6"
+  },
+
   "DS3": {
     "hostname": "DS3",
     "mgmt_ip": "10.0.1.194",
