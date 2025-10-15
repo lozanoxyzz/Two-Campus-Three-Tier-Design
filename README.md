@@ -4,6 +4,8 @@ This project implements a topology for an enterprise network based on the three-
 
 It is developed on GNS3, simulating real networks design and scalability.
 
+The complete GNS3 topology file is available in the [`gns3_project`](gns3_project/) folder.
+
 ## First Stage Topology
 
 ![Topología de red](diagrams/first_stage_topology.png)
