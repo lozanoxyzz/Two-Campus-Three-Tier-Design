@@ -1,0 +1,179 @@
+Building configuration...
+
+Current configuration : 2863 bytes
+!
+! Last configuration change at 17:44:37 CST Tue Oct 14 2025
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname DS2
+!
+boot-start-marker
+boot-end-marker
+!
+!
+logging discriminator EXCESS severity drops 6 msg-body drops EXCESSCOLL 
+logging buffered 50000
+logging console discriminator EXCESS
+enable secret 5 $1$OsnC$x4IQuV03MiZGSqDmdAi2S0
+!
+username admin secret 5 $1$zzJW$qezKRQ55Gwe28p.kF4uXs.
+no aaa new-model
+clock timezone CST -6 0
+!
+!
+!
+!
+!
+no ip icmp rate-limit unreachable
+!
+!
+!
+no ip domain-lookup
+ip domain-name domain.com
+no ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+spanning-tree vlan 10,99 priority 28672
+!
+vlan internal allocation policy ascending
+!
+ip tcp synwait-time 5
+ip ssh version 2
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 10.0.2.2 255.255.255.255
+!
+interface Port-channel1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface Ethernet0/0
+!
+interface Ethernet0/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface Ethernet0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface Ethernet0/3
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface Ethernet1/0
+!
+interface Ethernet1/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-protocol lacp
+ channel-group 1 mode active
+!
+interface Ethernet1/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-protocol lacp
+ channel-group 1 mode active
+!
+interface Ethernet1/3
+!
+interface Ethernet2/0
+!
+interface Ethernet2/1
+ no switchport
+ ip address 10.0.3.5 255.255.255.252
+!
+interface Ethernet2/2
+!
+interface Ethernet2/3
+!
+interface Ethernet3/0
+!
+interface Ethernet3/1
+!
+interface Ethernet3/2
+!
+interface Ethernet3/3
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan10
+ ip address 10.0.0.3 255.255.255.192
+ standby version 2
+ standby 10 ip 10.0.0.1
+!
+interface Vlan20
+ ip address 10.0.0.67 255.255.255.192
+ ip helper-address 10.0.0.9
+ standby version 2
+ standby 20 ip 10.0.0.65
+ standby 20 priority 105
+ standby 20 preempt
+!
+interface Vlan30
+ ip address 10.0.0.131 255.255.255.192
+ ip helper-address 10.0.0.9
+ standby version 2
+ standby 30 ip 10.0.0.129
+ standby 30 priority 105
+ standby 30 preempt
+!
+interface Vlan99
+ ip address 10.0.0.195 255.255.255.240
+ ip helper-address 10.0.0.9
+ standby version 2
+ standby 99 ip 10.0.0.193
+!
+router ospf 2
+ passive-interface Loopback0
+ network 0.0.0.0 255.255.255.255 area 0
+!
+ip forward-protocol nd
+!
+no ip http server
+no ip http secure-server
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line vty 0 4
+ login local
+ transport input ssh
+!
+!
+end
