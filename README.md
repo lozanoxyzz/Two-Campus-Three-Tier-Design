@@ -33,7 +33,9 @@ It is developed on GNS3, simulating real networks design and scalability.
 [VLAN and Subnet Plan](docs/vlan-and-subnet-plan)
 
 
-## Technologies**
+##
+
+**Technologies**
 
 - Cisco IOU L2/L3
 - GNS3
