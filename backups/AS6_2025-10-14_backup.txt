@@ -1,6 +1,6 @@
 Building configuration...
 
-Current configuration : 3309 bytes
+Current configuration : 3395 bytes
 !
 ! Last configuration change at 17:44:37 CST Tue Oct 14 2025
 !
@@ -30,6 +30,7 @@ clock timezone CST -6 0
 !
 !
 no ip routing
+ip arp inspection vlan 40,50,60,199
 no ip icmp rate-limit unreachable
 !
 !
@@ -71,6 +72,7 @@ interface Ethernet0/1
  switchport trunk encapsulation dot1q
  switchport trunk native vlan 1000
  switchport mode trunk
+ ip arp inspection trust
  ip dhcp snooping trust
 !
 interface Ethernet0/2
@@ -78,6 +80,7 @@ interface Ethernet0/2
  switchport trunk encapsulation dot1q
  switchport trunk native vlan 1000
  switchport mode trunk
+ ip arp inspection trust
  ip dhcp snooping trust
 !
 interface Ethernet0/3
