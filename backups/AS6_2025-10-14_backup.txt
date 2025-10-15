@@ -1,8 +1,8 @@
 Building configuration...
 
-Current configuration : 3613 bytes
+Current configuration : 3757 bytes
 !
-! Last configuration change at 17:44:37 CST Tue Oct 14 2025
+! Last configuration change at 21:40:27 CST Tue Oct 14 2025 by admin
 !
 version 15.2
 service timestamps debug datetime msec
@@ -183,6 +183,11 @@ no ip http server
 no ip http secure-server
 !
 !
+ip access-list standard MGMT_ACCESS
+ permit 10.0.0.192 0.0.0.15
+ permit 10.0.1.192 0.0.0.15
+ deny   any
+!
 !
 !
 !
@@ -199,6 +204,7 @@ line aux 0
  privilege level 15
  logging synchronous
 line vty 0 4
+ access-class MGMT_ACCESS in
  login local
  transport input ssh
 !

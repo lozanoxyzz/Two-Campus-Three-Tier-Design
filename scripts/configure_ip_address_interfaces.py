@@ -2,7 +2,7 @@ from netmiko import ConnectHandler
 import json
 import ipaddress
 
-with open('../devicesB.json') as file:
+with open('../devicesA.json') as file:
     devices_info = json.load(file)
 
 
