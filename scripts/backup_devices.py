@@ -11,7 +11,7 @@ day = now.day
 
 
 if __name__ == '__main__':
-    with open('../devicesB.json') as file:
+    with open('../devicesA.json') as file:
         device_info = json.load(file)
 
     for device in device_info.values():
