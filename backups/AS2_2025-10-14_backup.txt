@@ -1,6 +1,6 @@
 Building configuration...
 
-Current configuration : 3136 bytes
+Current configuration : 3267 bytes
 !
 ! Last configuration change at 17:44:37 CST Tue Oct 14 2025
 !
@@ -66,6 +66,9 @@ ip ssh version 2
 interface Ethernet0/0
  switchport access vlan 20
  switchport mode access
+ switchport port-security mac-address sticky
+ switchport port-security mac-address sticky 0050.7966.6800
+ switchport port-security
 !
 interface Ethernet0/1
  switchport trunk encapsulation dot1q
