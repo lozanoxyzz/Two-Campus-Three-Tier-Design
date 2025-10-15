@@ -26,7 +26,7 @@ It is developed on GNS3, simulating real networks design and scalability.
  
 - External Connections with Floating Static Routes
 
-**Documentation**
+## Documentation
 
 [IPv4 Addressing Table](docs/ip_addressing) 
 
