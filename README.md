@@ -32,6 +32,7 @@ It is developed on GNS3, simulating real networks design and scalability.
 
 [VLAN and Subnet Plan](docs/vlan-and-subnet-plan.md)
 
+[Security Plan](docs/security_plan.md)
 
 ## 
 
