@@ -17,7 +17,7 @@ It is developed on GNS3, simulating real networks design and scalability.
 - Security (ACLs, Port-Security, Dynamic ARP Inspection, DHCP Snooping)
 - DHCP Implementation
 
- **Final Stage Topology** 
+ ## Final Stage Topology
 
  ![Topología de red](diagrams/finalstage_topology.png)
  
@@ -33,7 +33,7 @@ It is developed on GNS3, simulating real networks design and scalability.
 [VLAN and Subnet Plan](docs/vlan-and-subnet-plan)
 
 
-**Technologies**
+## Technologies**
 
 - Cisco IOU L2/L3
 - GNS3
