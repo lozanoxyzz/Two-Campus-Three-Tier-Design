@@ -28,7 +28,8 @@ It is developed on GNS3, simulating real networks design and scalability.
 
 **Documentation**
 
-[IPv4 Addressing Table](docs/ip_addressing)
+[IPv4 Addressing Table](docs/ip_addressing) 
+
 [VLAN and Subnet Plan](docs/vlan-and-subnet-plan)
 
 
