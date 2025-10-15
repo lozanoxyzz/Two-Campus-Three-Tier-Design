@@ -34,7 +34,6 @@ It is developed on GNS3, simulating real networks design and scalability.
 
 [Security Plan](docs/security_plan.md)
 
-## 
 
 **Technologies**
 
