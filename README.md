@@ -4,7 +4,7 @@ This project implements a topology for an enterprise network based on the three-
 
 It is developed on GNS3, simulating real networks design and scalability.
 
-**Topology**
+**First Stage Topology**
 
 ![Topología de red](diagrams/first_stage_topology.png)
 
@@ -16,7 +16,15 @@ It is developed on GNS3, simulating real networks design and scalability.
 - Redundancy with HSRP and Etherchannel
 - Security (ACLs, Port-Security, Dynamic ARP Inspection, DHCP Snooping)
 - DHCP Implementation
-  
+
+ **Final Stage Topology** 
+
+ ![Topología de red](diagrams/final_stage_topology.png)
+ 
+
+ **Main Characteristics**
+ 
+- External Connections with Floating Static Routes
 
 **Technologies**
 
