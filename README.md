@@ -19,7 +19,7 @@ It is developed on GNS3, simulating real networks design and scalability.
 
  **Final Stage Topology** 
 
- ![Topología de red](diagrams/final_stage_topology.png)
+ ![Topología de red](diagrams/finalstage_topology.png)
  
 
  **Main Characteristics**
