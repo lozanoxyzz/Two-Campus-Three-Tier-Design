@@ -50,6 +50,3 @@ This document summarizes the security configuration applied to the Two-Campus Th
 **Check:** `show running-config | include username`
 
 ---
-
-**Author:** Gustavo Martínez Lozano  
-**Project:** Two-Campus Three-Tier Network Design
